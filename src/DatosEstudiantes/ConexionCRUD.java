@@ -73,4 +73,50 @@ public class ConexionCRUD {
             System.out.println("Ha ocurrido el siguiente error: " + ex.getMessage());
         }
     }
+    //Metodo para hacer consultas a la base de datos
+    public void desplegarRegistros(String tablaBuscar, String camposBuscar, String condicionBuscar) throws SQLException{
+    ConexionCRUD conectar = new ConexionCRUD();
+    Connection cone = conectar.getConnection();
+        try {
+            Statement stmt;
+            String sqlQueryStmt;
+            
+            if(condicionBuscar.equals("")){
+                sqlQueryStmt = "SELECT " + camposBuscar + " FROM " + tablaBuscar + ";";                                
+            }else{
+                sqlQueryStmt = "SELECT " + camposBuscar + " FROM " + tablaBuscar + " WHERE " + condicionBuscar;
+            }
+            stmt = cone.createStatement();
+            stmt.executeUpdate(sqlQueryStmt);
+            
+            try(ResultSet miResultSet = stmt.executeQuery(sqlQueryStmt)){
+                if(miResultSet.next()){
+                    ResultSetMetaData metaData = miResultSet.getMetaData();
+                    int numComunas = metaData.getColumnCount();
+                    System.out.println("<< REGISTROS ALMACENADOS >>");
+                    System.out.println();
+                    
+                    for (int i = 1; i <= numComunas; i++) {
+                        System.out.printf("%-20s\t", metaData.getColumnName(i));                        
+                    }
+                    System.out.println();
+                    do{
+                        for (int i = 1; i <= numComunas; i++) {
+                            System.out.printf("%-20s\t", miResultSet.getObject(i));                            
+                        }
+                        System.out.println();
+                    }while(miResultSet.next());
+                    System.out.println();
+                }else{
+                    System.out.println("No se han encontrado registros");
+                }
+                miResultSet.close();
+            } finally {
+                stmt.close();
+                cone.close();
+            }            
+        } catch (SQLException ex) {
+            System.out.println("Ha ocurrido el siguiente error: " + ex.getMessage());
+        }        
+    }
 }
