@@ -28,4 +28,27 @@ public class ConexionCRUD {
             System.out.println("Conexion fallida! Error! : " + e.getMessage());
         }
     }
+    
+    public Connection getConnection(){
+        return conexion;
+    }
+    
+    //Metodo para guardar registros
+    public void guardarRegistros(String tabla, String camposTabla, String valoresCampos){
+        ConexionCRUD conectar  = new ConexionCRUD();
+        Connection cone = conectar.getConnection();
+        
+        try {
+            String sqlQueryStmt = "INSERT INTO " + tabla + " (" + camposTabla + ") VALUES (" + valoresCampos + ");";
+            Statement stmt;
+            stmt = cone.createStatement();
+            stmt.executeUpdate(sqlQueryStmt);
+            
+            stmt.close();
+            cone.close();
+            System.out.println("Registro guardado correctamente XD");           
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }        
+    }
 }
