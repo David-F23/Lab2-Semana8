@@ -34,19 +34,19 @@ public class Estudiante {
         this.ape_estudiante = ape_estudiante;
     }
 
-    public String getEdad_estudiante() {
+    public int getEdad_estudiante() {
         return edad_estudiante;
     }
 
-    public void setEdad_estudiante(String edad_estudiante) {
+    public void setEdad_estudiante(int edad_estudiante) {
         this.edad_estudiante = edad_estudiante;
     }
     
    private int id_estudiante; 
    private String carnet_estudiante; 
    private String nom_estudiante; 
-   private String ape_estudiante; 
-   private String edad_estudiante; 
+   private String ape_estudiante;
+   private int edad_estudiante; 
     
     
 }
