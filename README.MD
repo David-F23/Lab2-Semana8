@@ -1,4 +1,4 @@
-# Lab2-Semana8
+# Evaluación Práctica II, Semana 8
 #### DESCRIPCIÓN:
 En el siguiente proyecto se muestra un registro de estudiantes(CRUD) almacenando los datos ingresados y guardandolos para su futura utilidad.
 Creado con el lenguaje de programación JAVA en el IDE de NetBeans
