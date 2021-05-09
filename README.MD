@@ -5,11 +5,11 @@ Creado con el lenguaje de programación JAVA en el IDE de NetBeans
 
 ### INTEGRANTES TEAM DEVELOPMENT #3
 <ul>
-    <li>Abel Hernesto López Hernández</li>
-    <li>Alexis Giovanni Angel López</li>
-    <li>David Enrique Flores Valladares</li>
-    <li>Edwin Alexander Hernándex Grande</li>
-    <li>Samuel Antonio Hernández Chorro</li>
+    <li>Abel Hernesto López Hernández    | Backend</li>
+    <li>Alexis Giovanni Angel López      | Backend</li>
+    <li>David Enrique Flores Valladares  | Scrum Master</li>
+    <li>Edwin Alexander Hernándex Grande | Frontend</li>
+    <li>Samuel Antonio Hernández Chorro  | Frontend</li>
 </ul>
 
 ### DOCENTE:
