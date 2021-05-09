@@ -1,5 +1,18 @@
 package DatosEstudiantes;
 
+//  Crear el crud para almacenar registros de la siguiente tabla
+//  ----------------------------------------------------------------------------------
+//  |                                 ESTUDIANTE                                     |
+//  ----------------------------------------------------------------------------------
+//  |campos            |tipo de datos   |otros                                       |
+//  |---------------------------------------------------------------------------------
+//  |id_estudiante     |int             |llave primaria autoincrementable desde 1001 |
+//  |carnet_estudiante |varchar(6)      |ejemplo MP1234                              |
+//  |nom_estudiante    |varchar(30)     |                                            |
+//  |ape_estudiante    |varchar(30)     |                                            |
+//  |edad_estudiante   |int(3)          |                                            |
+//  ----------------------------------------------------------------------------------
+
 import java.sql.SQLException;
 import java.util.Scanner;
 
