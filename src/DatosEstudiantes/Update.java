@@ -20,11 +20,11 @@ public class Update {
         utilerias.desplegarRegistros(tablaBuscar, camposBuscar, condicionBuscar);
         
         System.out.println("Carnet:");
-        student.setCarnet_estudiante(leer.nextLine());
+        student.setCarnet_estudiante(leer.next());
         System.out.println("Nombre:");
-        student.setNom_estudiante(leer.nextLine());
+        student.setNom_estudiante(leer.next());
         System.out.println("Apellido");
-        student.setApe_estudiante(leer.nextLine());
+        student.setApe_estudiante(leer.next());
         System.out.println("Edad");
         student.setEdad_estudiante(leer.nextInt());
         
