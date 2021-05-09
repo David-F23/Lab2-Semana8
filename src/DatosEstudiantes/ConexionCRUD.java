@@ -87,7 +87,7 @@ public class ConexionCRUD {
                 sqlQueryStmt = "SELECT " + camposBuscar + " FROM " + tablaBuscar + " WHERE " + condicionBuscar;
             }
             stmt = cone.createStatement();
-            stmt.executeUpdate(sqlQueryStmt);
+            stmt.executeQuery(sqlQueryStmt);
             
             try(ResultSet miResultSet = stmt.executeQuery(sqlQueryStmt)){
                 if(miResultSet.next()){
