@@ -4,13 +4,13 @@ En el siguiente proyecto se muestra un registro de estudiantes(CRUD) almacenando
 Creado con el lenguaje de programación JAVA en el IDE de NetBeans
 
 ### INTEGRANTES TEAM DEVELOPMENT #3
-<ul>
-    <li>Abel Hernesto López Hernández    | Backend</li>
-    <li>Alexis Giovanni Angel López      | Backend</li>
-    <li>David Enrique Flores Valladares  | Scrum Master</li>
-    <li>Edwin Alexander Hernándex Grande | Frontend</li>
-    <li>Samuel Antonio Hernández Chorro  | Frontend</li>
-</ul>
+| Alumno  | Rol  | Tareas  |
+| ------------ | ------------ | ------------ |
+|David Enrique Flores Valladares| Scrum Master  |Desarrollo de la clase "Read" y verificación de errores   |
+|Abel Hernesto López Hernández   |Backend   |Desarrollo de las clases "Update" y "Estudiante"   |
+|Alexis Giovanni Angel López    | Backend   |Desarollo de la clase "ConexionCRUD" y la base de datos   |
+|Edwin Alexander Hernándex Grande  | Frontend   |Desarrollo de la clase "Delete"   |
+|Samuel Antonio Hernández Chorro   |Frontend   |Desarrollo de las clases "Create" y "MenuPrincipal"   |
 
 ### DOCENTE:
 <ul>
